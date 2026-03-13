@@ -12,4 +12,4 @@ Helper SQL views and scripts that make Oracle data dictionary and dynamic perfor
 
 ## See also
 
-[`ora_err`](/ora_err.sql) is used for the [DB Link Executor](https://github.com/ReneNyffenegger/Oracle-DB-Link-Executor) project.
+[`ora_err`](/ora_err.sql) and [`hlp`](/hlp.sql) are used for the [DB Link Executor](https://github.com/ReneNyffenegger/Oracle-DB-Link-Executor) project.
