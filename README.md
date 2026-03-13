@@ -9,3 +9,7 @@ Helper SQL views and scripts that make Oracle data dictionary and dynamic perfor
 - `low`: Can be set to `lower(` to make selected object names, owner etc. lowercase.
 - `wol`: Needs to be set to `)` if `low` uses `lower(`).
 - `ci`: optional ` collate binary_ci` suffix for case-insensitive comparisons (default `""`). Can only be set if [`max_string_size`](https://renenyffenegger.ch/notes/development/databases/Oracle/adminstration/init-parameters/max/string_size) is set to `extended`.
+
+## See also
+
+[`ora_err`](/ora_err.sql) is used for the [DB Link Executor](https://github.com/ReneNyffenegger/Oracle-DB-Link-Executor) project.
