@@ -56,6 +56,11 @@ select
    to_date(obj.timestamp, 'yyyy-mm-dd:hh24:mi:ss') ts,
    &low obj.status        &wol  &ci                st,
    &low oracle_maintained &wol                     ora,
-   obj.object_id                                   id
+   obj.object_id                                   id,
+   lower('drop ' ||
+      case when obj.object_type  = 'DATABASE LINK' and obj.owner = 'PUBLIC' then 'public ' end ||
+      obj.object_type || ' ' ||
+      case when obj.object_type != 'DATABASE LINK'                          then obj.owner || '.' end ||
+      obj.object_name || ';') stmt_drop
 from
    dba_objects obj;
