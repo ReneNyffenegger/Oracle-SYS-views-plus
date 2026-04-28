@@ -12,8 +12,9 @@
 @syn.sql
 @ts.sql
 @syn.sql
+@dblink.sql
+
 @obj_priv.sql
 @sesstat.sql
-
 @ora_err.sql
 @hlp.sql

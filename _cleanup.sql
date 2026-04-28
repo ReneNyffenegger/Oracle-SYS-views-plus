@@ -7,6 +7,7 @@ drop table &pfx.ora_err purge;
 drop view &pfx.sesstat;
 drop view &pfx.obj_priv;
 drop view &pfx.ts;
+drop view &pfx.dblink;
 drop view &pfx.syn;
 drop view &pfx.cons_fk;
 drop view &pfx.cons_;
