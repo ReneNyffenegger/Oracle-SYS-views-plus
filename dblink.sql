@@ -1,6 +1,3 @@
--- select * from dba_objects  where object_type = 'DATABASE LINK';
--- select * from dba_db_links;
-
 create or replace view &pfx.dblink as
 select
    obj.own,
